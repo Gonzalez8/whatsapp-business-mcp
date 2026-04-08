@@ -1,0 +1,18 @@
+{
+  "name": "whatsapp-business-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for WhatsApp Business API - manage templates, phone numbers, and messaging",
+  "type": "module",
+  "main": "src/server.mjs",
+  "bin": {
+    "whatsapp-business-mcp": "src/server.mjs"
+  },
+  "scripts": {
+    "start": "node src/server.mjs"
+  },
+  "keywords": ["mcp", "whatsapp", "business", "templates"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  }
+}
