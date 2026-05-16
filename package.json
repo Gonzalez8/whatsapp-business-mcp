@@ -29,6 +29,15 @@
     "http"
   ],
   "license": "MIT",
+  "author": "Gonzalez8",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzalez8/whatsapp-business-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gonzalez8/whatsapp-business-mcp/issues"
+  },
+  "homepage": "https://github.com/Gonzalez8/whatsapp-business-mcp#readme",
   "engines": {
     "node": ">=18.0.0"
   },
