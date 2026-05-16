@@ -1,18 +1,48 @@
 {
   "name": "whatsapp-business-mcp-server",
-  "version": "1.0.0",
-  "description": "MCP Server for WhatsApp Business API - manage templates, phone numbers, and messaging",
+  "version": "1.1.0",
+  "description": "MCP Server for WhatsApp Business API - manage templates, phone numbers, send messages. Supports stdio and HTTP (Streamable/SSE) transports.",
   "type": "module",
   "main": "src/server.mjs",
   "bin": {
     "whatsapp-business-mcp": "src/server.mjs"
   },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "start": "node src/server.mjs"
+    "start": "node src/server.mjs",
+    "start:http": "MCP_TRANSPORT=http node src/server.mjs",
+    "test": "node --test test/*.test.mjs"
   },
-  "keywords": ["mcp", "whatsapp", "business", "templates"],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "whatsapp",
+    "whatsapp-business",
+    "meta",
+    "graph-api",
+    "templates",
+    "sse",
+    "http"
+  ],
   "license": "MIT",
+  "author": "Gonzalez8",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gonzalez8/whatsapp-business-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gonzalez8/whatsapp-business-mcp/issues"
+  },
+  "homepage": "https://github.com/Gonzalez8/whatsapp-business-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0"
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
   }
 }
